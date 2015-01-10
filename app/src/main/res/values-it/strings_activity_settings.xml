@@ -1,0 +1,21 @@
+<resources>
+    <string name="title_activity_settings">Impostazioni</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- General settings -->
+    <string name="pref_header_general">Generali</string>
+
+    <string name="pref_enable_cleaning_at_boot_time">Esegui all\'avvio</string>
+    <string name="pref_description_cleaning_at_boot_time">
+        Abilita la pulizia dei log all\'accensione del telefono
+    </string>
+
+
+    <!-- Notifications settings -->
+    <string name="pref_header_notifications">Notifiche</string>
+
+    <string name="pref_enable_notifications">Attiva notifiche</string>
+    <string name="pref_enable_clean_at_boot_time_notification">Pulizia log all\'avvio</string>
+
+</resources>

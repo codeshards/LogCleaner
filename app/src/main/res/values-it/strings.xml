@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LogCleaner</string>
+    <string name="app_label">Log cleaner</string>
+    <string name="action_settings">Impostazioni</string>
+
+
+    <!-- Dialogs -->
+    <string name="i18n_perform_cleaning_title">Recupero spazio disco</string>
+    <string name="i18n_perform_cleaning_question">
+        Stai per cancellare tutti i log, desideri continuare?
+    </string>
+
+    <string name="i18n_clean_operation_failed_title">Pulizia log fallita!</string>
+    <string name="i18n_clean_operation_failed_text">
+        Qualcosa è andato storto
+    </string>
+    <string name="i18n_clean_operation_failed_no_root_access">
+        Non si dispone dei permessi necessari
+    </string>
+    <string name="i18n_clean_operation_failed_execution_error_as_root">
+        Errore nell\'eseguire l\'operazione come Root
+    </string>
+    <string name="i18n_clean_operation_failed_execution_error">
+        Errore nell\'eseguire l\'operazione
+    </string>
+
+    <string name="i18n_clean_operation_success_title">Pulizia log completata!</string>
+    <string name="i18n_clean_operation_success_text">
+        Operazione completata correttamente
+    </string>
+
+    <!-- Notifications -->
+    <string name="i18n_clean_at_boot_time_notification_success">
+        Pulizia automatica dei log effettuata
+    </string>
+
+
+    <!-- User Interface: Main Activity -->
+    <string name="i18n_internal_storage">ARCHIVIO INTERNO</string>
+    <string name="i18n_internal_storage_used_space">Utilizzato:</string>
+    <string name="i18n_internal_storage_used_space_default_value">0 MB</string>
+    <string name="i18n_internal_storage_free_space">Libero:</string>
+    <string name="i18n_internal_storage_free_space_default_value">0 MB</string>
+    <string name="i18n_internal_storage_soon_to_be_freed_space">
+        Spazio disco che verrà liberato:
+    </string>
+    <string name="i18n_internal_storage_soon_to_be_freed_space_default_value">0 MB</string>
+
+    <string name="i18n_clean_button">LIBERA SPAZIO DISCO</string>
+</resources>

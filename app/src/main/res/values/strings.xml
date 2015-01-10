@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LogCleaner</string>
+    <string name="app_label">Log cleaner</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!-- Dialogs -->
+    <string name="i18n_perform_cleaning_title">Recupero spazio disco</string>
+    <string name="i18n_perform_cleaning_question">
+        You are about to delete the log files, are you sure?
+    </string>
+
+    <string name="i18n_clean_operation_failed_title">Log cleaning failed</string>
+    <string name="i18n_clean_operation_failed_text">
+        Sorry, something went wrong
+    </string>
+    <string name="i18n_clean_operation_failed_no_root_access">
+        No Root access
+    </string>
+    <string name="i18n_clean_operation_failed_execution_error_as_root">
+        Error while performing the operation as Root
+    </string>
+    <string name="i18n_clean_operation_failed_execution_error">
+        Error while performing the operation
+    </string>
+
+    <string name="i18n_clean_operation_success_title">Log cleaning complete!</string>
+    <string name="i18n_clean_operation_success_text">
+        Everything went well, you have freed some space.
+    </string>
+
+    <!-- Notifications -->
+    <string name="i18n_clean_at_boot_time_notification_success">
+        Planned log cleaning has been performed
+    </string>
+
+
+    <!-- User Interface: Main Activity -->
+    <string name="i18n_internal_storage">INTERNAL STORAGE</string>
+    <string name="i18n_internal_storage_used_space">Used space:</string>
+    <string name="i18n_internal_storage_used_space_default_value">0 MB</string>
+    <string name="i18n_internal_storage_free_space">Free space:</string>
+    <string name="i18n_internal_storage_free_space_default_value">0 MB</string>
+    <string name="i18n_internal_storage_soon_to_be_freed_space">
+        Amount of space that will be freed:
+    </string>
+    <string name="i18n_internal_storage_soon_to_be_freed_space_default_value">0 MB</string>
+
+    <string name="i18n_clean_button">DELETE LOGS</string>
+</resources>
