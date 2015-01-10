@@ -31,6 +31,8 @@ It's not complete yet and in the ToDo section you can find what I feel like it's
   
 - The app needs root permission to do the job, so you need to root your phone in a way or another, so just be sure that **su** is available somewhere
 
+- Currently there are only two languages supported: English (my very bad english) and Italian. I don't plan to add support to any other language to be honest, but whoever feels up to the task is welcome.
+
 - I'm aware that another apps that does the same thing as this exists out there (in fact it's easy to guess that there are many apps alike) but I wanted to solve this by myself and, in the while, learn something new and not to become incredibly rich or something.
 
 ## Tested devices 
