@@ -19,6 +19,10 @@ It's not complete yet and in the ToDo section you can find what I feel like it's
 4. Add a tap feedback to Notifications
 
 ## Notes
+- Sdk target starts from v.17, since I needed to use this app on a specific version of android I had to chose this as minimum requirement, this might change sometime in the future. 
+
+- This app has been tested only on a THL W100 con Android v. 4.2.1, so take it as it is because I've no idea of it's behaviour on other devices. 
+
 - The app checks and delete files from two directories:
   * /data/log
   * /data/log_other_mode
@@ -27,7 +31,17 @@ It's not complete yet and in the ToDo section you can find what I feel like it's
   
 - The app needs root permission to do the job, so you need to root your phone in a way or another, so just be sure that **su** is available somewhere
 
+- I'm aware that another apps that does the same thing as this exists out there (in fact it's easy to guess that there are many apps alike) but I wanted to solve this by myself and, in the while, learn something new and not to become incredibly rich or something.
+
+## Tested devices 
+- THL W100
+  * Android 4.2.1 - MOLY.WR8.W1248.MD.WG.MP.V6.P8 - ThL.W100.130912.JBV2.QHD.EN.COM.V01.8P32_V01_MT6589
+
 ## Credits
 I've to thanks all the amazing people who answer questions on stackoverflow, many of the solutions I've adopted or derivated from comes from you all.
 
 I've found the icon somewhere on the internet but I couldn't pin point the author, if you are (and have proof obviously) let me known.
+
+## Download url
+If you want the ready to use apk can be downloaded from [here](http://apk.repository.northernlights.io/log_cleaner_1.0.apk).
+Again be aware that I didn't had the time to test it on different devices and due to the specific location of the log directory it's enterely possible that doesn't works on all phones.
