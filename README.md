@@ -43,5 +43,5 @@ I've to thanks all the amazing people who answer questions on stackoverflow, man
 I've found the icon somewhere on the internet but I couldn't pin point the author, if you are (and have proof obviously) let me known.
 
 ## Download url
-If you want the ready to use apk can be downloaded from [here](http://apk.repository.northernlights.io/log_cleaner_1.0.apk).
+If you want the ready to use apk can be downloaded from [here](http://apk.repository.northernlights.io/logcleaner_1.0.apk).
 Again be aware that I didn't had the time to test it on different devices and due to the specific location of the log directory it's enterely possible that doesn't works on all phones.
