@@ -1,7 +1,21 @@
 package io.northernlights.logcleaner;
 
-/**
- * Created by alessandro on 09/01/15.
+/*
+ * LogCleaner - Helps you to save Internal Storage space deleting log folders
+ * Copyright (C) 2014 Alessandro Garzaro
+ *
+ * This program is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option)
+ * any later version.
+
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+ * more details.
+
+ * You should have received a copy of the GNU General Public License along with
+ * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 import android.os.Environment;
@@ -11,19 +25,11 @@ import java.io.File;
 import java.text.DecimalFormat;
 
 public class StorageInfo {
-    /*************************************************************************************************
-     Returns size in bytes.
-
-     If you need calculate external memory, change this:
-     StatFs statFs = new StatFs(Environment.getRootDirectory().getAbsolutePath());
-     to this:
-     StatFs statFs = new StatFs(Environment.getExternalStorageDirectory().getAbsolutePath());
-     **************************************************************************************************/
     public static long TotalMemory()
     {
         StatFs statFs = new StatFs(Environment.getDataDirectory().getAbsolutePath());
 
-        long   Total  = ( (long) statFs.getBlockCount()  * (long) statFs.getBlockSize());
+        long   Total  = (long)statFs.getBlockCount()  * (long)statFs.getBlockSize();
 
         return Total;
     }
@@ -32,20 +38,14 @@ public class StorageInfo {
     {
         StatFs statFs = new StatFs(Environment.getDataDirectory().getAbsolutePath());
 
-        long   Free   = (statFs.getAvailableBlocks() * (long) statFs.getBlockSize());
+        long   Free   = statFs.getAvailableBlocks() * (long) statFs.getBlockSize();
 
         return Free;
     }
 
     public static long UsedMemory()
     {
-        StatFs statFs = new StatFs(Environment.getDataDirectory().getAbsolutePath());
-
-        long   Total  = ((long) statFs.getBlockCount() * (long) statFs.getBlockSize());
-        long   Free   = (statFs.getAvailableBlocks()   * (long) statFs.getBlockSize());
-        long   Busy   = Total - Free;
-
-        return Busy;
+        return TotalMemory() - FreeMemory();
     }
 
     public static long folderSize(File directory) {
@@ -95,6 +95,6 @@ public class StorageInfo {
             return floatForm((double) size / Gb) + " GB";
         }
 
-        return "???";
+        return "N/A";
     }
 }
