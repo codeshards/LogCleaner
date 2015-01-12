@@ -245,11 +245,11 @@ public class MainActivity extends Activity implements OnClickListener {
     private void updateInternalStorageSpaceText() {
         TextView internalStorageUsedSpaceText = (TextView)findViewById(R.id.internalStorageUsedSpaceTextView);
         internalStorageUsedSpace = StorageInfo.UsedMemory();
-        internalStorageUsedSpaceText.setText(StorageInfo.printHuman(internalStorageUsedSpace, "MB"));
+        internalStorageUsedSpaceText.setText(StorageInfo.printHuman(internalStorageUsedSpace, "auto"));
 
         TextView internalStorageFreeSpaceText = (TextView)findViewById(R.id.internalStorageFreeSpaceTextView);
         internalStorageFreeSpace = StorageInfo.FreeMemory();
-        internalStorageFreeSpaceText.setText(StorageInfo.printHuman(internalStorageFreeSpace, "MB"));
+        internalStorageFreeSpaceText.setText(StorageInfo.printHuman(internalStorageFreeSpace, "auto"));
     }
 
     private void updateInternalStorageProgressBar() {
