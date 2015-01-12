@@ -23,8 +23,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.app.Activity;
 import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MenuInflater;
@@ -94,7 +92,6 @@ public class MainActivity extends Activity implements OnClickListener {
 
         // Set log total size
         updateLogFileSizeText();
-
     }
 
     private void loadI18nStrings() {
