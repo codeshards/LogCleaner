@@ -37,7 +37,8 @@ It's not complete yet and in the ToDo section you can find what I feel like it's
 
 ## Tested devices 
 - THL W100
-  * Android 4.2.1 - MOLY.WR8.W1248.MD.WG.MP.V6.P8 - ThL.W100.130912.JBV2.QHD.EN.COM.V01.8P32_V01_MT6589
+  * Android 4.2.1 
+    * MOLY.WR8.W1248.MD.WG.MP.V6.P8 - ThL.W100.130912.JBV2.QHD.EN.COM.V01.8P32_V01_MT6589
 
 ## Credits
 I've to thanks all the amazing people who answer questions on stackoverflow, many of the solutions I've adopted or derivated from comes from you all.
