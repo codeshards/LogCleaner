@@ -14,7 +14,7 @@ It's not complete yet and in the ToDo section you can find what I feel like it's
 
 ## To Do
 1. Test it on different phones to test layout
-2. Improve layout removing the few, but still annoying, px margins
+2. ~~Improve layout removing the few, but still annoying, px margins~~
 3. Add a background service to keep log folders under control
 4. Add a tap feedback to Notifications
 
