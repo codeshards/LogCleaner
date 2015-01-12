@@ -16,7 +16,7 @@ It's not complete yet and in the ToDo section you can find what I feel like it's
 1. Test it on different phones to test layout
 2. ~~Improve layout removing the few, but still annoying, px margins~~
 3. Add a background service to keep log folders under control
-4. Add a tap feedback to Notifications
+4. ~~Add a tap feedback to Notifications~~
 
 ## Notes
 - Sdk target starts from v.17, since I needed to use this app on a specific version of android I had to chose this as minimum requirement, this might change sometime in the future. 
