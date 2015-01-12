@@ -46,51 +46,90 @@ this program.  If not, see <http://www.gnu.org/licenses/>.
         android:layout_marginTop="15dp"
         android:progress="50" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/InternalStorageUsedAndFreeLayout"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/i18n_internal_storage_used_space"
-        android:id="@+id/internalStorageUsedSpaceLabel"
         android:layout_below="@+id/internalStorageProgressBar"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp" />
+        android:layout_alignParentStart="true">
 
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/i18n_internal_storage_used_space_default_value"
-        android:gravity="end"
-        android:id="@+id/internalStorageUsedSpaceTextView"
-        android:layout_below="@+id/internalStorageProgressBar"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="250px"
-        android:layout_marginTop="20dp" />
+        <LinearLayout
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="20dp" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/i18n_internal_storage_free_space"
-        android:id="@+id/internalStorageFreeSpaceLabel"
-        android:layout_below="@+id/internalStorageUsedSpaceTextView"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="15dp" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
 
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/i18n_internal_storage_free_space_default_value"
-        android:gravity="end"
-        android:id="@+id/internalStorageFreeSpaceTextView"
-        android:layout_below="@+id/internalStorageUsedSpaceTextView"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="250px"
-        android:layout_marginTop="15dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/i18n_internal_storage_used_space"
+                    android:id="@+id/internalStorageUsedSpaceLabel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/i18n_internal_storage_used_space_default_value"
+                    android:gravity="end"
+                    android:id="@+id/internalStorageUsedSpaceTextView"
+                    android:paddingEnd="40dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="15dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/i18n_internal_storage_free_space"
+                    android:id="@+id/internalStorageFreeSpaceLabel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/i18n_internal_storage_free_space_default_value"
+                    android:gravity="end"
+                    android:id="@+id/internalStorageFreeSpaceTextView"
+                    android:paddingEnd="40dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
@@ -99,7 +138,7 @@ this program.  If not, see <http://www.gnu.org/licenses/>.
         android:text="@string/i18n_internal_storage_soon_to_be_freed_space"
         android:id="@+id/internalStorageSoonToBeFreedSpaceLabel"
         android:layout_marginTop="60dp"
-        android:layout_below="@+id/internalStorageFreeSpaceTextView"
+        android:layout_below="@+id/InternalStorageUsedAndFreeLayout"
         android:layout_alignParentStart="true"
         android:textColor="#FFFFFF" />
 
