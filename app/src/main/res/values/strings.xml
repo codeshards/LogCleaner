@@ -25,7 +25,7 @@ this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
     <!-- Dialogs -->
-    <string name="i18n_perform_cleaning_title">Recupero spazio disco</string>
+    <string name="i18n_perform_cleaning_title">Disk space recovery</string>
     <string name="i18n_perform_cleaning_question">
         You are about to delete the log files, are you sure?
     </string>
